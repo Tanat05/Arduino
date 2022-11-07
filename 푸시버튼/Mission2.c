@@ -25,6 +25,11 @@ void loop(){
   
   if(button==1){
     digitalWrite(8, HIGH);
+    digitalWrite(9, LOW);
+    delay(300);
+    digitalWrite(9, HIGH);
+    digitalWrite(8, LOW);
+    delay(300);
   }
   else{
     digitalWrite(8, LOW);
