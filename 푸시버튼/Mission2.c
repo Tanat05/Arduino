@@ -11,8 +11,6 @@ void setup() {
 
 void loop(){
   int readValue1=digitalRead(6), readValue2=digitalRead(7);
-  
-  Serial.println(readValue);
 
   if (readValue1==HIGH){
     button=1;
@@ -33,5 +31,6 @@ void loop(){
   }
   else{
     digitalWrite(8, LOW);
+    digitalWrite(9, LOW);
   }
 }
