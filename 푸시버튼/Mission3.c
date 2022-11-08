@@ -51,29 +51,13 @@ void loop(){
     delay(300);
   }
   else if(button==3){
-    digitalWrite(8, LOW);
-    digitalWrite(9, LOW);
-    digitalWrite(10, HIGH);
-    delay(300);
-    digitalWrite(8, LOW);
-    digitalWrite(9, HIGH);
-    digitalWrite(10, HIGH);
-    delay(300);
-    digitalWrite(8, HIGH);
-    digitalWrite(9, HIGH);
-    digitalWrite(10, HIGH);
-    delay(300);
-    digitalWrite(8, HIGH);
-    digitalWrite(9, HIGH);
-    digitalWrite(10, LOW);
-    delay(300);
-    digitalWrite(8, HIGH);
-    digitalWrite(9, LOW);
-    digitalWrite(10, LOW);
-    delay(300);
-    digitalWrite(8, LOW);
-    digitalWrite(9, LOW);
-    digitalWrite(10, LOW);
-    delay(300);
+    for (int i=0;i<255;i++){
+      analogWrite(10, i);
+      delay(10);
+    }
+    for (int i=255;i>0;i--){
+      analogWrite(10, i);
+      delay(10);
+    }
   }
 }
