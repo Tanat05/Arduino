@@ -3,18 +3,17 @@ int button=0;
 void setup() {
   pinMode(9, OUTPUT);
   pinMode(8, OUTPUT);
+  pinMode(84, OUTPUT);
   pinMode(7, INPUT);
   pinMode(6, INPUT);
 }
 
 void loop(){
-  int readValue1=digitalRead(6), readValue2=digitalRead(7);
-
-  if (readValue1==HIGH){
+  if (digitalRead(6)==HIGH){
     button=1;
     delay(100);
   }
-  if (readValue2==HIGH){
+  if (digitalRead(7)==HIGH){
     button=0;
     delay(100);
   }
@@ -22,11 +21,11 @@ void loop(){
   if(button==1){
     digitalWrite(8, HIGH);
     digitalWrite(9, LOW);
-    tone(4, 2000, 200);
+    tone(4, 2000);
     delay(300);
     digitalWrite(9, HIGH);
     digitalWrite(8, LOW);
-    tone(4, 1600, 200);
+    tone(4, 1600);
     delay(300);
   }
   else{
