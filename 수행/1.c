@@ -3,7 +3,7 @@ int button=0;
 void setup() {
   pinMode(9, OUTPUT);
   pinMode(8, OUTPUT);
-  pinMode(84, OUTPUT);
+  pinMode(4, OUTPUT);
   pinMode(7, INPUT);
   pinMode(6, INPUT);
 }
