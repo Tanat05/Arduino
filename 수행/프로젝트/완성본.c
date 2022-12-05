@@ -28,7 +28,7 @@ void loop() {
   {
     Serial.print("temperature:");
     Serial.print(temp);
-    Serial.print(" humidity:");
+    Serial.print(" humi:");
     Serial.print(humi);
     Serial.println();
   }
